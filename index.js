@@ -10,6 +10,8 @@ const app = express();
 const PORT = process.env.PORT || "3000";
 const HOST = process.env.HOST || "0.0.0.0";
 
+console.log("Boromir")
+
 app.use(helmet());
 
 app.use("/academies", (req, res) => {
