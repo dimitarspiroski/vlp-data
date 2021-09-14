@@ -13,6 +13,7 @@ const HOST = process.env.HOST || "0.0.0.0";
 app.use(helmet());
 
 app.use("/academies", (req, res) => {
+  res.set("Content-Type", "application/json")
   res.status(200).send(academies);
 });
 
